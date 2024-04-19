@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="/estilo.css">
+    <title>JulianaStudio</title>
+</head>
+<body>
+    <!-- HOME -->
+    <section id="home" class="home">
+        <header>
+            <a href="#" class="logo">
+                 <!-- <img src="./img/logo.jpg" alt=""> -->
+            </a>
+            <div class="menu" onclick="verMenu()">
+                <span>MENU</span>
+                <div class="barras">
+                    <div class="linea efecto"></div>
+                    <div class="linea"></div>
+                    <div class="linea efecto"></div>
+                </div>
+            </div>
+            <!-- Menu desplegable -->
+            <nav id="nav" class="nav-menu">
+                    <a href="#home" onclick="cerrar()">Inicio</a>
+                    <a href="#portfolio" onclick="cerrar()" >Promociones</a>
+                    <a href="#sobremi" onclick="cerrar()">¿Quienes Somos?</a>
+                    <a href="#habilidades" onclick="cerrar()">Servicios</a>
+                    <a href="#testimonios" onclick="cerrar()">Testimonios</a>
+                   <button onclick="cerrar()"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+        </header>
+        <div class="contenido">
+            <h1>Juliana <br>Studio</h1>
+            <p class="descripcion">UÑAS <span class="color">/</span>PESTAÑAS<span class="color">/</span> CEJAS<span class="color">/</span>CABELLO</p>
+
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>   
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="titulo-seccion headline load-hidden">¡Promociones!</h2>
+        <div class="fila">
+            <div class="col">
+                <img src="/" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <img src="/img/aviso de cejas y pestañas.png" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <img src="img/promo1.png" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <img src="img/promo2.png" alt="" class="img-proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <img src="img/promo3.png" alt="" class="img-proyecto">
+            </div>
+            <div class="col">
+                <img src="img/promo4.png" alt="" class="img-proyecto">
+            </div>
+        </div>
+    </section>
+    
+    <!--  SOBRE MI -->
+    <section class="sobre-mi" id="sobremi">
+        <h2 class="titulo-seccion negro">¿Quienes somos?</h2>
+        <h3> <span class="linea"></span></h3>
+        <h4 class="descripcion">
+            Soy Marcus, un <a href="#"><span class="efecto"> </span>Visual Designer</a> con sede en Londres. Mis mayores fortalezas son el Branding, <a href="#"><span class="efecto"> </span>Web Design</a>, Fotografía, Diseño ui/ux y  <a href="#"><span class="efecto"> </span>Gráficos de movimientos</a>.
+        </h4>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="titulo-seccion">Servicios</h2>
+        <div class="fila">
+            <div class="menu">
+                <ul>
+                    <li id = "1" class="selected" onclick="mostrar(this)">Manicure y pedicure</li>
+                    <li id = "2" onclick="mostrar(this)" class="">Estetica facial</li>
+                    <li id = "3" onclick="mostrar(this)">Color e imagen capilar</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="detalle" id="info1">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <img src="./img/icono1U.png" alt="">
+                            <h4>Manicure y Pedicure</h4>
+                            <p>Tradicional y semipermanente</p>
+                        </div>
+                        <div class="col-detalle">
+                            <img src="./img/IconoU2.png" alt="">
+                            <h4>Uñas</h4>
+                            <p>Uñas acrilicas, Uñas en polygel, Uñas press-on</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info2">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <img src="/img/iconoC1.png" alt="">
+                            <h4>Depilaciones</h4>
+                            <p>Depilación con cera, Cejas,Bozo,Axilas,Pierna completa/media pierna</p>
+                        </div>
+                        <div class="col-detalle">
+                           <img src="/img/iconoC2.png" alt="">
+                            <h4>Cejas</h4>
+                            <p>Cejas en henna</p>
+                        </div>
+                    </div>
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <img src="/img/iconoC3.png" alt="">
+                            <h4>Pestañas</h4>
+                            <p>Lifting de pestañas, Pestañas punto a punto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle" id="info3">
+                    <div class="fila-detalle">
+                        <div class="col-detalle">
+                            <img src="./img/iconoP1.png" alt="">
+                            <h4>Cabello</h4>
+                            <p>Cepillado, Keranita , Repolarizacion, Peinados con ondas y trenzas</p>
+                        </div>
+                        <div class="col-detalle">
+                            <img src="./img/iconoP2.png" alt="">
+                            <h4>color</h4>
+                            <p>Tintes,Balayage , Rayitos , Iluminaciones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios" id="testimonios">
+        <h2 class="titulo-seccion blanco">Ven a</h2>
+        <div class="division">
+            <div class="col col1">
+            </div>
+            <div class="col col2">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="titulo">
+               <h3>Jualiana <br> Studio <span class="linea"></span></h3>
+            </div>
+            <div class="cliente">
+                <div class="contenedor-img">
+                    <img src="img/foto1U.png" alt="" id="imgCliente">
+                </div>
+                <button class="siguiente" onclick="siguiente()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="opinion">
+                <h3 id="tituloCliente">Gran Trabajo!!!</h3>
+                <p id="txtCliente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusantium pariatur, soluta deserunt, natus praesentium delectus impedit eum ad molestias.</p>
+                <h4 id="nombreCliente">Mark S.</h4>
+                <p id="puestoCliente">CEO and WP Dev</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
